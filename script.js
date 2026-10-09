@@ -21,24 +21,23 @@ const CONFIG = {
   ],
 
   // Ảnh: bỏ ảnh vào thư mục "photos" rồi điền tên file. Chưa có ảnh thì sẽ hiện ô màu hồng.
-  photos: [
-    { src: "photos/photos1.jpg.jpg", caption: "Lần đầu mình chụp chung" },
-    { src: "photos/photos2.jpg", caption: "Em thích tối nàyyyyy" },
-    { src: "photos/photos3.jpg", caption: "Chuyến đi đáng nhớ" },
-    { src: "photos/photos4.jpg", caption: "Anh cườiii" },
-    { src: "photos/photos5.jpg", caption: "Những bữa ăn chung" },
-    { src: "photos/photos6.jpg", caption: "2 đứa mình và 4 cái bóng" },
-    { src: "photos/photos7.jpg", caption: "Đi Lò còoooo" },
-    { src: "photos/photos8.jpg", caption: "Xem Phùng Khánh Linhhh" },
-    { src: "photos/photos9.jpg", caption: "Đi Phan Thiếttt " },
-    { src: "photos/photos10.jpg", caption: "Học bàiiii" },
-    { src: "photos/photos11.jpg", caption: "Đi quán cà phê mà anh dẫn nyc đi trước đó" },
-    { src: "photos/photos12.jpg", caption: "Ở nhà anhhhhh" },
-    { src: "photos/photos13.jpg", caption: "Học bài (again)"},
-    { src: "photos/photos14.jpg", caption: "Học bài (again)"},
-    { src: "photos/photos15.jpg", caption: "Tró NH"}
+    photos: [
+    { src: "photos1.jpg.jpg", caption: "Lần đầu mình chụp chung" },
+    { src: "photos2.jpg", caption: "Em thích tối nàyyyyy" },
+    { src: "photos3.jpg", caption: "Chuyến đi đáng nhớ" },
+    { src: "photos4.jpg", caption: "Anh cườiii" },
+    { src: "photos5.jpg", caption: "Những bữa ăn chung" },
+    { src: "photos6.jpg", caption: "2 đứa mình và 4 cái bóng" },
+    { src: "photos7.jpg", caption: "Đi Lò còoooo" },
+    { src: "photos8.jpg", caption: "Xem Phùng Khánh Linhhh" },
+    { src: "photos9.jpg", caption: "Đi Phan Thiếttt " },
+    { src: "photos10.jpg", caption: "Học bàiiii" },
+    { src: "photos11.jpg", caption: "Đi quán cà phê mà anh dẫn nyc đi trước đó" },
+    { src: "photos12.jpg", caption: "Ở nhà anhhhhh" },
+    { src: "photos13.jpg", caption: "Học bài (again)" },
+    { src: "photos14.jpg", caption: "Học bài (again)" },
+    { src: "photos15.jpg", caption: "Tró NH" }
   ],
-
   // Những lý do yêu
   reasons: [
     "Vì anh luôn khiến em cười, kể cả những ngày mệt nhất.",
