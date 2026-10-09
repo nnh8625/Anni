@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kỷ niệm 1 năm của chúng mình</title>
+  <meta name="description" content="Một năm yêu thương - câu chuyện của chúng mình">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" id="hearts" aria-hidden="true"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <button class="music-btn" id="musicBtn" aria-label="Bật/tắt nhạc" hidden>♪</button>
+
+  <!-- HERO -->
+  <header class="hero" id="top">
+    <p class="eyebrow reveal">Kỷ niệm 1 năm</p>
+    <h1 class="names reveal">
+      <span id="name1">Tên bạn</span>
+      <span class="amp">&amp;</span>
+      <span id="name2">Người ấy</span>
+    </h1>
+    <p class="since reveal">Từ ngày <strong id="startLabel"></strong></p>
+    <a class="scroll-hint reveal" href="#counter" aria-label="Cuộn xuống">
+      <span>Cuộn xuống</span>
+      <i></i>
+    </a>
+  </header>
+
+  <!-- COUNTER -->
+  <section class="section" id="counter">
+    <h2 class="section-title reveal">Chúng mình đã bên nhau</h2>
+    <div class="counter reveal" id="counterGrid">
+      <div class="tile"><b id="c-years">0</b><span>năm</span></div>
+      <div class="tile"><b id="c-months">0</b><span>tháng</span></div>
+      <div class="tile"><b id="c-days">0</b><span>ngày</span></div>
+      <div class="tile"><b id="c-hours">0</b><span>giờ</span></div>
+      <div class="tile"><b id="c-minutes">0</b><span>phút</span></div>
+      <div class="tile"><b id="c-seconds">0</b><span>giây</span></div>
+    </div>
+    <p class="total reveal">Tức là <strong id="totalDays">0</strong> ngày yêu thương, và vẫn đang đếm tiếp.</p>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" id="timeline">
+    <h2 class="section-title reveal">Hành trình của chúng mình</h2>
+    <ol class="timeline" id="timelineList"></ol>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <h2 class="section-title reveal">Những khoảnh khắc</h2>
+    <div class="gallery" id="galleryGrid"></div>
+  </section>
+
+  <!-- REASONS -->
+  <section class="section" id="reasons">
+    <h2 class="section-title reveal">Vì sao mình yêu bạn</h2>
+    <div class="reason-card reveal" id="reasonCard">
+      <p id="reasonText">Bấm nút bên dưới để mở một lý do nhé.</p>
+    </div>
+    <button class="btn reveal" id="reasonBtn">Bốc một lý do ♥</button>
+    <p class="muted reveal" id="reasonCount"></p>
+  </section>
+
+  <!-- LETTER -->
+  <section class="section" id="letter">
+    <h2 class="section-title reveal">Thư gửi người thương</h2>
+    <div class="envelope reveal" id="envelope" role="button" tabindex="0" aria-label="Mở thư">
+      <div class="env-flap"></div>
+      <div class="env-heart">♥</div>
+      <p class="env-hint">Bấm để mở thư</p>
+    </div>
+    <article class="paper" id="paper" hidden>
+      <h3 id="letterTo"></h3>
+      <div id="letterBody"></div>
+      <p class="sign" id="letterSign"></p>
+    </article>
+  </section>
+
+  <!-- FINALE -->
+  <section class="section finale" id="finale">
+    <p class="big-script reveal">Chúc mừng kỷ niệm 1 năm!</p>
+    <p class="muted reveal" id="finaleText"></p>
+    <button class="btn reveal" id="surpriseBtn">Bấm vào đây có bất ngờ ✨</button>
+  </section>
+
+  <footer class="footer">Làm bằng cả trái tim ♥</footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Đóng">×</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Ảnh trước">‹</button>
+    <figure>
+      <div class="lb-img" id="lbImg"></div>
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Ảnh sau">›</button>
+  </div>
+
+  <audio id="bgm" loop preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
